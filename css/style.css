@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-container {
+  background-color: hsl(210, 46%, 95%);
+  display: flex;
+  height: 100vh;
+}
+.sub-container {
+  display: flex;
+  margin: auto;
+  width: 730px;
+  height: 280px;
+  font-family: "Manrope", sans-serif;
+}
+.image-div {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.image {
+  width: 285px;
+  height: 280px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.contents-div {
+  width: 445px;
+  height: 280px;
+  padding: 35px 40px;
+  background-color: rgb(255, 255, 255);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-size: 13px;
+}
+.profile-div {
+  display: flex;
+}
+.avatar {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.icon {
+  width: 30px;
+  height: 30px;
+  padding: 8px;
+  background-color: hsl(210, 46%, 95%);
+  border-radius: 50%;
+  position: relative;
+}
+.head-div {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: hsl(217, 19%, 35%);
+}
+.description-div {
+  margin-bottom: 20px;
+  font-size: 13px;
+  letter-spacing: 0.2px;
+  color: hsl(217, 19%, 35%);
+  font-weight: 500;
+}
+.name-div {
+  margin-right: 150px;
+}
+.tooltip {
+  visibility: hidden;
+  width: 250px;
+  height: 55px;
+  background-color: hsl(217, 19%, 35%);
+  color: hsl(212, 23%, 69%);
+  letter-spacing: 2px;
+  padding: 10px;
+  padding-left: 20px;
+  display: flex;
+  border-radius: 10px;
+  position: absolute;
+  content: "";
+  top: 49%;
+  right: 24%;
+}
+.icon-facebook {
+  padding: 7px;
+}
+.icon-twitter {
+  padding: 7px;
+}
+.icon-pinterest {
+  padding: 7px;
+}
+.share-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-media {
+  display: flex;
+  margin-left: 20px;
+}
+.tooltip::after {
+  position: absolute;
+  content: "";
+  top: 100%;
+  right: 48%;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid hsl(217, 19%, 35%);
+}
+.icon-tooltip:active .tooltip {
+  visibility: visible;
+}
